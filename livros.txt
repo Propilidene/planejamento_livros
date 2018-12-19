@@ -1,0 +1,59 @@
+﻿- C_Completo_E_Total:
+
+      Inicio da Leitura: Wed Dec 19 06:04:23 2018
+      Paginas lidas: 0
+      Paginas totais: 816
+      Progresso: 0.00%
+
+   Relatorio: Para voce concluir a leitura, iremos sugerir a voce um plano com dias proximos do seu prazo determinado.
+      - 15.0 dias:
+        Para ler o livro em 15.0 dias voce devera ler 54.4 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 13.6 paginas por hora.
+
+      - 18.0 dias:
+        Para ler o livro em 18.0 dias voce devera ler 45.3 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 11.3 paginas por hora.
+
+      - 21.0 dias:
+        Para ler o livro em 21.0 dias voce devera ler 38.9 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 9.7 paginas por hora.
+
+      - 24.0 dias:
+        Para ler o livro em 24.0 dias voce devera ler 34.0 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 8.5 paginas por hora.
+
+      - 27.0 dias:
+        Para ler o livro em 27.0 dias voce devera ler 30.2 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 7.6 paginas por hora.
+
+      - 30.0 dias (Tempo determinado pelo usuário):
+        Para ler o livro em 30.0 dias voce devera ler 27.2 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 6.8 paginas por hora.
+
+      - 33.0 dias:
+        Para ler o livro em 33.0 dias voce devera ler 24.7 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 6.2 paginas por hora.
+
+      - 36.0 dias:
+        Para ler o livro em 36.0 dias voce devera ler 22.7 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 5.7 paginas por hora.
+
+      - 39.0 dias:
+        Para ler o livro em 39.0 dias voce devera ler 20.9 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 5.2 paginas por hora.
+
+      - 42.0 dias:
+        Para ler o livro em 42.0 dias voce devera ler 19.4 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 4.9 paginas por hora.
+
+      - 45.0 dias:
+        Para ler o livro em 45.0 dias voce devera ler 18.1 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 4.5 paginas por hora.
+
+      - 48.0 dias:
+        Para ler o livro em 48.0 dias voce devera ler 17.0 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 4.3 paginas por hora.
+
+      - 51.0 dias:
+        Para ler o livro em 51.0 dias voce devera ler 16.0 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 4.0 paginas por hora.
+
+      - 54.0 dias:
+        Para ler o livro em 54.0 dias voce devera ler 15.1 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 3.8 paginas por hora.
+
+      - 57.0 dias:
+        Para ler o livro em 57.0 dias voce devera ler 14.3 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 3.6 paginas por hora.
+
+      - 60.0 dias:
+        Para ler o livro em 60.0 dias voce devera ler 13.6 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 3.4 paginas por hora.
+
+      - Recomendado pelo autor (27.2 dias):
+        Para ler o livro em 27.2 dias você devera ler 30.0 paginas por dia ou dentro do seu planejamento diário com (4.0 horas/dia) teriam de ser lidas 7.5 paginas por hora.
+
