@@ -5,13 +5,13 @@
 #include <windows.h>
 int main()
 {
-    int tpag,ipag,x=1,progresso,j=0,i,u=0;
-    float tempo_leitura,tempo_individual;
+    int tpag,ipag,x=1,j=0,i,u=0;
+    float progresso,tempo_leitura,tempo_individual;
     char sprogresso[12],livro[50];
     time_t rawtime;
     struct tm * timeinfo;
-    time ( &rawtime );
-    timeinfo = localtime ( &rawtime );
+    time (&rawtime);
+    timeinfo = localtime (&rawtime);
     FILE *p;
     system("cls");
     printf("===== PLANEJAMENTO DE LEITURAS =====\n");
@@ -27,9 +27,11 @@ int main()
         {
             case 1:
                 printf("Digite aqui o nome do livro que deseja cadastrar: ");
-                scanf(" %s",livro);
+                getchar();
+                fgets(livro,50,stdin);
                 printf("Digite quantas paginas o livro tem: ");
                 scanf("%d",&tpag);
+                livro[strlen(livro) - 1] = '\0';
                 printf("Digite em que pagina do livro voce esta: ",&ipag);
                 scanf("%d",&ipag);
                 printf("Digite em quantos dias voce deseja ler o livro: ");
@@ -42,7 +44,7 @@ int main()
                 strcat(sprogresso,"%");
                 fprintf(p,"- %s:\n\n      Inicio da Leitura: %s      Paginas lidas: %d\n      Paginas totais: %d\n      Progresso: %s\n\n",livro,asctime (timeinfo),ipag,tpag,sprogresso);
                 float tempos_sugeridos[16],paginas_por_dia[16],paginas_por_hora[16];
-                // RecomendaÃ§Ã£o do autor (30 paginas por dia) =>
+                // Recomendação do autor (30 paginas por dia) =>
                 float autor_dias = (float) (tpag - ipag) / 30;
                 float autor_pag_por_hora = (float) 30 / tempo_leitura;
 
@@ -81,7 +83,7 @@ int main()
                 break;
             case 3:
                 system("cls");
-                printf("Digitos:\n\n  1: Voce podera cadastrar um livro desejado para a leitura.\n      Para cadastrar o livro, basta digitar o nome do livro.\n      Exemplo: Certo -> Algebra_Linear ou Algebra-Linear ou AlgebraLinear.\n               Errado -> Algebra Linear.\n      Deves digitar o nome sem usar espaco!\n      Logo depois as infomacoes que irao lhe pedir, nao ha misterios alem deste!\n\n");
+                printf("Digitos:\n\n  1: Voce podera cadastrar um livro desejado para a leitura.\n\n");
                 printf("  2: Voce podera comparar seu progresso atual com o progresso que voce\n     deveria estar cumprindo atraves de cadastramentos das paginas atuais.\n     {\n          EM DESENVOLVIMENTO\n     }\n\n");
                 printf("  3: Se voce esta lendo isso agora, creio que voce ja sabe usar o digito 3.\n\n");
                 printf("  0: Caso tenha feito seus cadastramentos e acompanhamentos, digite 0 para sair.\n\n");
