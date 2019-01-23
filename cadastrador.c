@@ -36,7 +36,6 @@ int main()
         switch(x)
         {
             case 1:
-                time(&tempo_log);
                 time (&rawtime);
     			timeinfo = localtime (&rawtime);
                 j=0;
@@ -79,7 +78,7 @@ int main()
                     }
                     else
                     {
-                        fprintf(p,"      - Plano de %.1f dias (Tempo determinado pelo usuario):\n        * Para ler o livro em %.1f dias voce devera ler %.1f paginas por dia ou dentro do seu planejamento diário com (%.1f horas/dia) teriam de ser lidas %.1f paginas por hora.\n\n        * Paginas Lidas: %d\n        * Paginas que deveriam ter sido lidas: %.1f\n        * Termina em %.1f dias.\n        * Era pra terminar em %.1f dias.\n        * Resumo: Voce esta dentro do prazo determinado!\n\n",tempos_sugeridos[i],tempos_sugeridos[i],paginas_por_dia[i],tempo_leitura,paginas_por_hora[i],ipag,ipag,terminaem,terminaem);
+                        fprintf(p,"      - Plano de %.1f dias (Tempo determinado pelo usuario):\n        * Para ler o livro em %.1f dias voce devera ler %.1f paginas por dia ou dentro do seu planejamento diário com (%.1f horas/dia) teriam de ser lidas %.1f paginas por hora.\n        * Termina em %.1f dias.\n\n",tempos_sugeridos[i],tempos_sugeridos[i],paginas_por_dia[i],tempo_leitura,paginas_por_hora[i],terminaem);
                     }
                 }
                 autor_terminaem = (tpag - ipag) / 30.0;
@@ -101,7 +100,7 @@ int main()
 
                 fclose(p);
                 p = fopen("livros_cabecalho.txt","a");
-                fprintf(p,"%ld - (%.1f dias -> %.2f hrs/dia -> %d -> %d/%d -> %s) %s\n",(long) tempo_log,tempo_individual,tempo_leitura,ipag,ipag,tpag,sprogresso,livro);
+                fprintf(p,"%ld - (%.1f dias -> %.2f hrs/dia -> %d -> %d/%d -> %s) %s\n",(long) rawtime,tempo_individual,tempo_leitura,ipag,ipag,tpag,sprogresso,livro);
 				Sleep(300);
                 printf("\nProcessando .");
                 Sleep(400);
@@ -110,6 +109,13 @@ int main()
                 printf(" .");
                 printf("\nLivro cadastrado com sucesso!\n");
                 fclose(p);
+                Sleep(500);
+                system("cls");
+                printf("===== PLANEJAMENTO DE LEITURAS =====\n");
+                printf("    Digite 1 para cadastrar o livro.\n");
+                printf("    Digite 2 para marcar a pagina que parou do livro.\n");
+                printf("    Digite 3 para ver as instrucoes de uso do programa.\n");
+                printf("    Digite 0 para sair.\n");
                 break;
             case 2:
                 time(&tempo_log);
@@ -148,7 +154,9 @@ int main()
                 q = fopen("livros_cabecalho.txt","w");
                 for(w=0;w<cont;w++)
 				{
-					j=0;
+					rawtime = livros_cadastrados[w].tempo_log;
+                    timeinfo = localtime(&rawtime);
+                    j=0;
 					progresso = (float) 100* livros_cadastrados[w].pag_atual / livros_cadastrados[w].pag_final;
                 	sprintf(sprogresso,"%.2f",progresso);
                 	strcat(sprogresso,"%");
@@ -259,6 +267,13 @@ int main()
                 printf("\nLivro atualizado com sucesso!\n");
                 fclose(p);
                 fclose(q);
+                Sleep(500);
+                system("cls");
+                printf("===== PLANEJAMENTO DE LEITURAS =====\n");
+                printf("    Digite 1 para cadastrar o livro.\n");
+                printf("    Digite 2 para marcar a pagina que parou do livro.\n");
+                printf("    Digite 3 para ver as instrucoes de uso do programa.\n");
+                printf("    Digite 0 para sair.\n");
 				break;
             case 3:
                 system("cls");
